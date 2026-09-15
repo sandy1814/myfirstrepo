@@ -1,1 +1,11 @@
-
+name: second workflow
+on: push
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo " second workflow Hello World!"
+      - name: Print goodbye
+        run: echo "second workflow Done -- bye!"
+        
