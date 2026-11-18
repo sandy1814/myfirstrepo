@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 name: manual_workflow
 on: 
@@ -18,3 +19,16 @@ jobs:
         run: |
           echo "Environment: {{ inputs.environment }}"
           echo "Version: {{ inputs.version }}"
+=======
+name: second workflow
+on: push
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo " second workflow Hello World!"
+      - name: Print goodbye
+        run: echo "second workflow Done -- bye!"
+        
+>>>>>>> ac61e1d5942ca17a05425ebda098c076aa68b285
